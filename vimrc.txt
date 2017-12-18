@@ -1,0 +1,37 @@
+
+
+:syntax on
+
+function! Latin()
+  :set spelllang=de
+  :set spell
+"  :setlocal fenc=latin1
+endfunc
+map gl :call Latin()<CR>
+
+function! Setutf()
+  :set spelllang=de
+  :set spell
+  :set fileencoding=utf8 
+  :set filetype=c
+endfunc
+map gu :call Setutf()<CR>
+
+
+map <F10> :q!<cr>
+nmap <F10> :q!<cr>
+imap jj <ESC>
+imap kk <ESC>
+map <space> <c-d>
+map mh :tabp<cr>
+map ml :tabn<cr>
+
+":set nospell
+" for spell checker
+map zz z=
+":set filetype=c
+":set nonu
+
+
+
+
